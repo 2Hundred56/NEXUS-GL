@@ -86,9 +86,6 @@ enum
     SDL_PACKEDORDER_BGRA
 };
 
-/** Array component order, low byte -> high byte. */
-/* !!! FIXME: in 2.1, make these not overlap differently with
-   !!! FIXME:  SDL_PACKEDORDER_*, so we can simplify SDL_ISPIXELFORMAT_ALPHA */
 enum
 {
     SDL_ARRAYORDER_NONE,

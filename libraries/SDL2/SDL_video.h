@@ -96,7 +96,6 @@ typedef struct SDL_Window SDL_Window;
  */
 typedef enum
 {
-    /* !!! FIXME: change this to name = (1<<x). */
     SDL_WINDOW_FULLSCREEN = 0x00000001,         /**< fullscreen window */
     SDL_WINDOW_OPENGL = 0x00000002,             /**< window usable with OpenGL context */
     SDL_WINDOW_SHOWN = 0x00000004,              /**< window is visible */
@@ -893,7 +892,7 @@ extern DECLSPEC int SDLCALL SDL_SetWindowOpacity(SDL_Window * window, float opac
 extern DECLSPEC int SDLCALL SDL_GetWindowOpacity(SDL_Window * window, float * out_opacity);
 
 /**
- *  \brief Sets the window as a modal for another window (TODO: reconsider this function and/or its name)
+ *  \brief Sets the window as a modal for another window
  *
  *  \param modal_window The window that should be modal
  *  \param parent_window The parent window

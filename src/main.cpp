@@ -4,11 +4,19 @@
  *  Created on: Apr 21, 2017
  *      Author: sunlightiv
  */
-#include "SDL2/SDL.h"
-#include "glad/glad.h"
+#include "nxssystem.h"
+#include "GameThread.h"
 int main() {
-	SDL_Init(SDL_INIT_EVERYTHING);
-	SDL_Quit();
+	nxssystem::init();
+	nxssystem::GameThread* game = new nxssystem::GameThread();
+	double dt, time, last = 0;
+	do {
+		time = nxssystem::time();
+		dt = time-last;
+		last = time;
+
+	} while (game->update(dt));
+	delete game;
 	return 0;
 }
 

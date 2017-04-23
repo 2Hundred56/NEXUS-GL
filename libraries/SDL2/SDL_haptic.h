@@ -170,8 +170,6 @@ typedef struct _SDL_Haptic SDL_Haptic;
  *          we ran out of bits, and this is important for XInput devices.
  */
 #define SDL_HAPTIC_LEFTRIGHT     (1u<<2)
-
-/* !!! FIXME: put this back when we have more bits in 2.1 */
 /* #define SDL_HAPTIC_SQUARE     (1<<2) */
 
 /**

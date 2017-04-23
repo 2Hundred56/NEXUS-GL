@@ -2102,7 +2102,6 @@ typedef void (APIENTRYP PFNGLMULTITEXCOORD4SVARBPROC) (GLenum target, const GLsh
 
 /*
  * ???. GL_MESA_packed_depth_stencil
- * XXX obsolete
  */
 #ifndef GL_MESA_packed_depth_stencil
 #define GL_MESA_packed_depth_stencil 1
